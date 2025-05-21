@@ -6,6 +6,8 @@ services:
     container_name: nestjs-app
     expose:
       - '3003'
+    ports:
+      - '3003:3003'
     environment:
       - NODE_ENV=development
       - DATABASE_HOST=postgres
