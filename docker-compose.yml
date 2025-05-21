@@ -4,8 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: nestjs-app
-    ports:
-      - '3003:3000'
+    expose:
+      - '3003'
     environment:
       - NODE_ENV=development
       - DATABASE_HOST=postgres
